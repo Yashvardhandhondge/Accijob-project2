@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup form</title>
+
+<meta name="description" content="Signup form with validation">
+
+<link rel="icon" href="favicon.ico">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Signup</h1>
+    </header>
+    <main>
+        <form id="signupForm">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" required>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" required>
+
+            <label for="password">Password</label>
+            <input id="password" type="password" required>
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input id="confirmPassword" type="password" required>
+
+            <label for="dateOfBirth">Date of Birth</label>
+            <input id="dateOfBirth" type="date" required>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="role" value="student" required >
+                    Student
+                </label>
+                <label>
+                    <input type="radio" name="role" value="employee"  >
+                    Employee
+                </label>
+            </div>
+            <label class="checkbox">
+                <input type="checkbox" id="terms" required>
+                I agree to the terms and conditions
+            </label>
+            <button type="submit">Signup</button>
+         <p id="message"></p>
+        </form>
+    </main>
+    <footer>
+        <p>Signup Form Project </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
